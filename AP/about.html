@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Follow this video for idea
+    https://www.youtube.com/watch?v=gQgqJG8ld7M
+    https://www.youtube.com/watch?v=qlA7dputiNc
+
+    And, I made adjustments along the way.
+
+    Using HTML5 Semantic Tags. Refer w3schools page for details.
+-->
+
+<head>
+    
+    <!-- Settings for Browser Compatibility and Responsive Setting -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta Tags for description, keyword, and author -->
+    <meta name="description" content="Personal Website">
+    <meta name="keywors" content="Arun, Gunasekaran, Fluidic Colours, Fortran, Python, LaTeX">
+    <meta name="author" content="Arun Prasaad Gunasekaran">
+
+
+    <!-- Webpage Title -->
+    <title> Arun Prasaad Gunasekaran | About </title>
+
+    <!-- Flexboxgrid CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" integrity="sha256-/8+sU56ayrJGahG9mmcUaNEghbavaceGybkdqO96Kk0=" crossorigin="anonymous" />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- MathJax -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- Settings for MathJax -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+            TeX: { equationNumbers: { autoNumber: "AMS" },
+                 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+          }
+        });
+    </script>
+
+    <!-- Processing JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" integrity="sha256-NLLibs1jQZNnV59vwp+9dMxTdhKAeqKbl3XzgYzQyso=" crossorigin="anonymous"></script>
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<header id="main-header">
+
+    <!-- Contains the brand name and the navbar -->
+    <div class="container navbar-container">
+
+        <!-- Define one row element with elements all aligned to right-->
+        <!-- Elements will be filled from right side or from the end!
+             Left side is the start side! -->
+        <!-- Alignments will be added to this row div. -->
+        <div class="row end-sm end-md end-lg center-xs middle-sm middle-md middle-lg">
+
+            <!-- Banner Name -->
+            <!-- 12, 2, 2, 2 columns long in eXtra small, small, medium, large screens-->
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <a id="brand" href="./index.html">Arun Prasaad Gunasekaran</a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./notes.html">Notes</a></li>
+                        <li><a href="./blogs.html">Blogs</a></li>
+                        <li class="current"><a href="./about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!-- End of Navigation bar -->
+
+<h1>Template page</h1>
+
+<!-- Footer -->
+<section id="company">
+    <div class="container">
+
+        <div class="row center-xs center-sm center-md center-lg
+        middle-xs middle-sm middle-md middle-lg"> 
+
+            <!-- Column 1 -->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+               <h4>Contact Me</h4>
+               <ul>
+                   <li>
+                        <i class="fa fa-envelope"> arunprasaad2711@gmail.com</i>
+                   </li>
+                   <li>
+                        <i class="fa fa-map"> Centre for Atmospheric and Oceanic Sciences, Indian Institute of Science, Bengaluru, Karnataka - 560012, India.</i>
+                   </li>
+               </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h4>Note to those who want to contact/follow me</h4>
+                <p class="center-p">
+                    <a href="#">READ ME FIRST</a>
+                </p>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h3>Connect</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-quora"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer-->
+<footer id="main-footer">
+    <div class="container">
+        <div class="row center-xs center-sm center-md center-lg
+        middle-xs middle-sm middle-md middle-lg">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p class="center-p">Copyright &copy; 2018 | Arun Prasaad Gunasekaran</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
+

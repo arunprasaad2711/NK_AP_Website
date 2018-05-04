@@ -1,0 +1,411 @@
+/* Taken From 
+
+    https://www.youtube.com/watch?v=qlA7dputiNc
+
+    And, I made adjustments along the way.
+
+    SCSS instructions: thenewboston sass and scss video list.
+
+    To autocompile scss files to css files, run this line in terminal:
+
+    sass --watch style.scss:style.css
+
+    Keep the terminal open so that the watch and update happen continuously.
+*/
+
+/* Google Font Imports */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+// @import url("./google_fonts.css");
+
+/* Font Awesome CSS Import */
+@import url("./fontawesome-all.min.css");
+
+/* Font variables */
+// $fonts: 'Lato', 'Monaco', 'Serif', 'Open Sans', 'Junction', 'Fertigo', 'Vollkorn', Arial, Helvetica, sans-serif, 'Ubuntu';
+$fonts: 'Open Sans', sans-serif;
+
+/* Colours */
+$red : #ff420e; // random red-orange
+$blue: #0000ff;
+$white : #ffffff;
+$yellow : #ffff00;
+$green: #89da59;
+$grey3 : #333333;
+$greyd: #f7f6f6;
+$greye: #e6e6e6;
+$black: #000000;
+
+/* Whole body reset */
+html, body
+{
+    background-color: $white;
+    margin: 0;
+    padding: 0;
+    font-family: $fonts;
+    height: auto;
+}
+
+/* Floating Container */
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* HEADER */
+/* Header settings */
+header
+{
+    background-color: $red;
+    float: left;
+    width: 100%;
+    position: fixed;
+}
+
+/* Name in header/navbar */
+header h3
+{
+    color:$white;
+    text-transform: uppercase;
+    float: left;
+}
+
+/* Unordered list inside header */
+header ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+    float: right;
+}
+
+/* Removing underlines in navbar links */
+header ul li
+{
+    display:inline-block;
+}
+
+/* Link settings inside header/navbar */
+header ul li a
+{
+    color: $white;
+    text-decoration : none;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+}
+
+/* burger menu icon in navbar settings */
+header i.fa
+{
+    color: $white;
+    font-size: 20px;
+    display: none;
+    margin-top: 22px;
+    float: right;
+    top: 0px;
+    left: 0px;
+}
+
+/* Hover Colour for burger menu icon */
+header i.fa:hover
+{
+    color: $yellow;
+}
+
+/* hover colour for links in navbar/header */
+header ul li a:hover
+{
+    color: $yellow;
+}
+
+/* Banner */
+.banner
+{
+    width: 100%;
+    display: block;
+}
+
+.banner-img
+{
+    width: 100%;
+    display: block;
+}
+
+/* OVERLAY MENU */
+/* Overlay container */
+.overlay
+{
+    // background-color: rgba(0.0,0.0,0.0,0.7);
+    background-color: $black;
+    width: 100%;
+    display: none;
+    opacity: 0.8;
+}
+
+/* List inside Overlay container */
+.overlay ul
+{
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* List items in overlay menu */
+.overlay ul li
+{
+    display:block;
+}
+
+/* Links inside overlay menu */
+.overlay ul li a
+{
+    color: $white;
+    text-decoration : none;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+    font-size: 25px;
+}
+
+/* Hover colour for overlay links */
+.overlay ul li a:hover
+{
+    color: $yellow;
+}
+
+/* overlay icons */
+.overlay i.fa
+{
+    color: $white;
+    font-size: 20px;
+    padding: 0px;
+    display: block;
+    margin-top: 10px;
+    float: right;
+}
+
+/* hover colour for overlay icons */
+.overlay i.fa:hover
+{
+    color:$yellow;
+}
+
+/* FEATURES Section */
+/* One Column Wrapper for divs */
+.one-col-wrapper
+{
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+/* Adaptive 3-2-1 column wrapper for divs */
+.three-col-wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 5px;
+}
+
+/* Border for individual div blocks */
+.three-col-wrapper > div
+{
+    border: $red 3px solid;
+    border-radius: 10px;
+}
+
+/* Sizes and colours for fontawesome icons in features */
+#features .fa 
+{
+    font-size: 60px;
+    color: #89da59;
+}
+  
+#features .fa:hover
+{
+    color: #ff420e;
+}
+
+/* Sample divs for scroll check */
+.one
+{
+    height: 400px;
+    background: red;
+}
+
+.two
+{
+    height: 400px;
+    background: yellow;
+}
+
+.three
+{
+    height: 400px;
+    background: green;
+}
+
+.four
+{
+    height: 400px;
+    background: blue;
+}
+
+/* COMPANY */
+/* background settings */
+#company
+{
+    background: $green;
+    float:left;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+}
+
+/* readme section */
+.readme
+{
+    margin: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    float:left;
+    width: 50%;
+}
+
+/* social section */
+.social
+{
+    margin: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    float:right;
+    width: 50%;
+}
+
+#company a
+{
+    color: $blue;
+    text-decoration: none;
+}
+
+#company a:hover
+{
+    color: $red;
+}
+
+/* Heading in readme section */
+.readme h4
+{
+    margin: 0px;
+}
+
+/* Heading in social section */
+.social h4
+{
+    margin: 0px;
+}
+
+/* Colours for fontawesome icons in company footer */
+#company .fab 
+{
+    color: $blue;
+}
+
+#company .fa 
+{
+    color: $blue;
+}
+
+/* FOOTER */
+/* Footer settings */
+footer
+{
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background: $black;
+    margin:0px;
+    padding:0px;
+    color: $white;
+}
+
+/* line adjustment */
+footer p
+{
+    margin: 0px;
+    line-height: 30px; 
+}
+
+
+/* Media Query */
+/* to collapse the Navbar section */
+@media all and (max-width: 768px)
+{
+    header ul
+    {
+        display: none;
+    }
+
+    .overlay
+    {
+        position: fixed;
+        margin-top: 60px;
+        display:none;
+    }
+}
+
+/* to display the burger menu */
+@media all and (max-width: 768px)
+{
+    header i.fa
+    {
+        display: block;  
+    }
+
+    .overlay
+    {
+        // margin-top:60px;
+        // position:fixed;
+    }
+
+}
+
+/* to collapse the features into 2 items per row */
+@media all and (max-width: 768px)
+{
+    .three-col-wrapper
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* to transform the features section into 1 item per row*/
+@media all and (max-width: 420px)
+{
+    .three-col-wrapper
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Text Alignment for title in showcase banner */
+@media (max-width: 800px) 
+{
+    #showcase h1 
+    {
+      font-size: 30px;
+    }
+}
+  
+/* Padding adjustments for showcase */
+@media (max-width: 500px) 
+{
+    #showcase .showcase-content 
+    {
+        padding: 40px 10px;
+    }
+}

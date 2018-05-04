@@ -1,0 +1,260 @@
+/* Taken From
+
+    https://www.youtube.com/watch?v=qlA7dputiNc
+
+    And, I made adjustments along the way.
+
+    SCSS instructions: thenewboston sass and scss video list.
+
+    To autocompile scss files to css files, run this line in terminal:
+
+    sass --watch style.scss:style.css
+
+    Keep the terminal open so that the watch and update happen continuously.
+*/
+/* Google Font Imports */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+/* Font Awesome CSS Import */
+@import url("./fontawesome-all.min.css");
+/* Font variables */
+/* Colours */
+
+html, body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*body,.blurred-bg-container content h1 {margin: 0;}*/
+
+div.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+header {
+  background-color: #ff420e;
+  float: left;
+  width: 100%;
+}
+
+header h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  float: left;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0px 0px 0px;
+  float: right;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  display: block;
+}
+
+header ul li a:hover {
+  color: #ffff00;
+}
+
+header i.fa {
+  color: #ffffff;
+  font-size: 20px;
+  display: none;
+  margin-top: 22px;
+  float: right;
+}
+
+header i.fa:hover {
+  color: #ffff00;
+}
+
+div.overlay {
+  background-color: #000000;
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+
+div.overlay ul {
+  padding: 0px;
+  margin: 10px 0px 0px 0px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+div.overlay ul li {
+  display: block;
+}
+
+div.overlay ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  display: block;
+  font-size: 25px;
+}
+
+div.overlay ul li a:hover {
+  color: #ffff00;
+}
+
+div.overlay i.fa {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 0px;
+  display: block;
+  margin-top: 10px;
+  float: right;
+}
+
+div.overlay i.fa:hover {
+  color: #ffff00;
+}
+
+.blurred-bg-container .content h1{margin:0;
+color:#000000;}
+
+.blurred-bg-container{
+  background:url('../images/showcase.jpg');
+  /*display:inline-block;*/
+  height:100vh;
+  background-size:cover;
+}
+
+
+.blurred-bg-container .content{
+  background:inherit;
+  color:#000000;
+  width:40%;
+  height:20%;
+  border-radius:8px;
+  box-shadow:0 0 32px rgba(0,0,0,0.5);
+  position:absolute;
+  top:80%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  overflow:hidden;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.blurred-bg-container .text{
+  padding:10px;
+  background:rgba(255,255,255,0.3);
+  height:100%;
+  box-sizing:border-box;
+  font-size: 12px;
+}
+
+.blurred-bg-container .blur{
+  background:inherit;
+  height:100vh;
+  width:166%;
+  position: absolute;
+  left:50;
+  top:0;
+  transform: translate(-10%,-30%);
+  filter:blur(20px);
+  z-index:-1;
+}
+/* Features */
+#features h2 {
+  font-size: 35px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#features p {
+  color: #ff420e; /*333333*/
+}
+
+#features .fa {
+  font-size: 60px;
+  color: #89da59;
+}
+
+#features .fa:hover {
+  color: #ff420e;
+}
+
+/* Company */
+#company {
+  background: #000000; /*ff420e*/
+  color: #ff420e; /*ffffff*/
+}
+
+#company h4 {
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+#company a {
+  color: #89da59;
+  text-decoration: none;
+}
+
+#company a:hover, #company .fa:hover {
+  color: #ffff00;
+}
+
+#company .fa {
+  font-size: 20px;
+  color: #89da59;
+}
+
+/* Footer */
+#main-footer {
+  background: #ff420e;
+  color:#ffffff;  /*89da59*/
+}
+
+
+/* Media Query */
+@media all and (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header i.fa {
+    display: block;
+  }
+}
+
+/* Text Alignment for title in showcase banner*/
+@media (max-width: 800px)
+{
+    .blurred-bg-container .content h1
+    {
+        font-size: 30px;
+
+    }
+}
+
+/* Padding adjustments for showcase */
+@media (max-width: 500px)
+{
+    .blurred-bg-container .content{
+    {
+        padding:40px 10px;
+
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Follow this video for idea
+    
+    https://www.youtube.com/watch?v=Zlyzpa3RY3Y
+
+    And, I made adjustments along the way.
+
+    Using HTML5 Semantic Tags. Refer w3schools page for details.
+-->
+
+<head>
+    
+    <!-- Settings for Browser Compatibility and Responsive Setting -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta Tags for description, keyword, and author -->
+    <meta name="description" content="Personal Website">
+    <meta name="keywors" content="Arun, Gunasekaran, Fluidic Colours, Fortran, Python, LaTeX">
+    <meta name="author" content="Arun Prasaad Gunasekaran">
+
+
+    <!-- Webpage Title -->
+    <title> Arun Prasaad Gunasekaran | Home </title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Custom JS for Overlay Menu -->
+    <script src="./js/overlay_script.js"></script>
+
+    <!-- MathJax -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- Settings for MathJax -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+            TeX: { equationNumbers: { autoNumber: "AMS" },
+                 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+          }
+        });
+    </script>
+
+    <!-- Processing JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" integrity="sha256-NLLibs1jQZNnV59vwp+9dMxTdhKAeqKbl3XzgYzQyso=" crossorigin="anonymous"></script>
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+</head>
+
+<body>
+
+    <!-- This is the navigation bar!-->
+    <header>
+        <div class="container">
+            <h3>Arun Prasaad Gunasekaran</h3>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Notes</a>
+                </li>
+                <li>
+                    <a href="#">Blogs</a>
+                </li>
+                <li>
+                    <a href="#">Apps</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+
+            <!-- Hamburger Menu icon -->
+            <i class="fa fa-bars" onclick="openNav()"></i>
+
+        </div>
+    </header>
+
+    <!-- Overlay Menu -->
+    <div class="overlay" id="navOverlay">
+        <div class="container">
+            <!-- Hamburger Menu icon -->
+            <i class="fa fa-window-close" onclick="closeNav()"></i>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Notes</a>
+                </li>
+                <li>
+                    <a href="#">Blogs</a>
+                </li>
+                <li>
+                    <a href="#">Apps</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="./images/banner.jpg" alt="" class="banner-img">
+    </div>
+    
+    <!-- Features -->
+    <section id="features">
+        <div class="container one-col-wrapper">
+           <div>
+                <h2>Choose a Section</h2>
+                <p>All the contents of the website diverge from here!</p>
+                <br>
+           </div>
+        </div>
+
+        <div class="container three-col-wrapper">
+            <div>
+                <h4>FAQs</h4>
+                <a href="#"><i class="fa fa-question-circle"></i></a>
+                <p>Answers to some commonly asked questions.</p>
+            </div>
+            <div>
+                <h4>Total Derivative</h4>
+                <a href="#"><i class="fa fa-file"></i></a>
+                <p>Access all my notes here.</p>
+            </div>
+            <div>
+                <h4>Fluidic Colours</h4>
+                <a href="#"><i class="fa fa-pencil-alt"></i></a>
+                <p class="center-p">This is my official blog!</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h4>Formal Me</h4>
+                <a href="#"><i class="fa fa-graduation-cap"></i></a>
+                <p class="center-p">This is my CV, qualifications, etc.,</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h4>Useful Apps</h4>
+                <a href="#"><i class="fa fa-cogs"></i></a>
+                <p class="center-p">Some applications that might interest you.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h4>Informal Me</h4>
+                <a href="#"><i class="fa fa-binoculars"></i></a>
+                <p class="center-p">This is my other side! :)</p>
+            </div>
+        </div>
+            
+    </section> 
+
+    <!-- COMPANY SECTION -->
+    <section id="company">
+        <div class="container">
+            <!-- Column 1 -->
+            <div class="readme">
+                <h4>READ THIS</h4>
+                <a href="#">Before Contacting/Following Me</a>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="social">
+                <h4>SOCIAL</h4>
+                <a href="mailto:arunprasaad2711@gmail.com" class="fa fa-envelope-open"></a>
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-google"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-quora"></a>
+                <a href="#" class="fab fa-youtube"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>-->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2018 | Arun Prasaad Gunasekaran</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
